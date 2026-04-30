@@ -1,0 +1,2 @@
+# wysiwyg-builder-free
+
