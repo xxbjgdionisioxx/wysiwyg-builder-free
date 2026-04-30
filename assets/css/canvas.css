@@ -1,0 +1,89 @@
+/* assets/css/canvas.css */
+/* These styles affect the elements inside the dropzone */
+
+.canvas-area {
+    /* Reset some builder styles to allow clean user styling */
+    font-family: inherit;
+    color: inherit;
+}
+
+.builder-element {
+    /* Base class for dropped elements */
+    transition: outline 0.1s;
+}
+
+.builder-container {
+    min-height: 50px;
+    padding: 1rem;
+    border: 1px dashed transparent;
+}
+
+.builder-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(12, 1fr);
+    min-height: 50px;
+}
+
+.builder-grid > * {
+    grid-column: span 12;
+}
+
+@media (min-width: 768px) {
+    .builder-grid > * {
+        grid-column: span 6; /* Default half width on tablet/desktop */
+    }
+}
+
+.builder-divider {
+    height: 1px;
+    background-color: #e2e8f0;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.builder-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.builder-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #3b82f6;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.builder-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.builder-input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #cbd5e0;
+    border-radius: 4px;
+}
+
+.builder-datatable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.builder-datatable th, .builder-datatable td {
+    border: 1px solid #e2e8f0;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.builder-datatable th {
+    background-color: #f8fafc;
+    font-weight: 600;
+}
