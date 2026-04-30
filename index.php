@@ -36,7 +36,6 @@
     </div>
 
     <!-- External Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
     
     <!-- Modules -->

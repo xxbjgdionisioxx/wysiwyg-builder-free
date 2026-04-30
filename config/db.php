@@ -1,6 +1,11 @@
 <?php
 // config/db.php
 
+if (strpos($_SERVER['REQUEST_URI'], '/api/') !== false) {
+    ini_set('display_errors', 0);
+    error_reporting(0);
+}
+
 $host = getenv('DB_HOST') ?: '127.0.0.1';
 $db   = getenv('DB_NAME') ?: 'builder_db';
 $user = getenv('DB_USER') ?: 'root';
